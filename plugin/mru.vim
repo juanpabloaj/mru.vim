@@ -712,6 +712,9 @@ function! s:MRU_Open_Window(...)
         silent! 0put =m
     endif
 
+	normal G
+	normal dd
+	setl cursorline
     " Move the cursor to the beginning of the file
     normal! gg
 
